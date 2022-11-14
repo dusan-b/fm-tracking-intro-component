@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.page-footer {
+  flex-shrink: 0;
+  font-family: $font-accent;
+  font-size: 0.875rem;
+  letter-spacing: 0.009em;
+  text-transform: uppercase;
+  color: $clr-neutral-2;
+  padding: 64px 0 16px;
+}
+
+.attribution > a {
+  border-bottom: 1px solid currentColor;
+
+  &:hover {
+    border-bottom: 2px solid $clr-primary;
+  }
+}

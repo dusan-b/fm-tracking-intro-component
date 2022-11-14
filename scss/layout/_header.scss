@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 59px;
+  padding-top: clamp(38px, 5vw, 64px);
+
+  @include media-min($viewport-l) {
+    margin-bottom: 164px;
+  }
+}
+
+.logo {
+  display: inline-block;
+  line-height: 0;
+  width: clamp(24px, 4vw, 32px);
+}

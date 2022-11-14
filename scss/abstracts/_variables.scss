@@ -1,0 +1,24 @@
+// Typography
+$font-copy: ("Barlow", "Helvetica", "Arial", sans-serif);
+$font-accent: ("Barlow Condensed", "Helvetica", "Arial", sans-serif);
+
+// Colors
+$clr-primary: hsl(0, 100%, 68%);
+$clr-neutral-1: hsl(230, 29%, 20%);
+$clr-neutral-2: hsl(230, 11%, 40%);
+$clr-neutral-3: hsl(231, 7%, 65%);
+$clr-neutral-4: hsl(207, 33%, 95%);
+
+// Burger menu
+$icon-menu-size: 24px;
+$line-menu-width: 24px;
+$line-menu-height: 2px;
+$line-menu-space: 5px;
+
+// Breakpoints
+$viewport-s: 23.4375em; // 375px
+$viewport-m: 48em; // 768px
+$viewport-l: 71.875em; // 1150px
+
+// Transitions
+$transition-main: 150ms ease-in-out;

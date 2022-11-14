@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Frontend Mentor | Project tracking intro component</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+  <div class="page">
+
+    <!-- #HEADER -->
+    <header class="main-header container">
+      <a href="./" class="logo">
+        <span class="visually-hidden">Tracking homepage</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true">
+          <g fill="#323334" fill-rule="evenodd">
+            <path d="M0 32V.241h23.041zM31.15 32V.241h-4.411L17.48 13.158zM3.645 32l11.854-15.879L27.353 32z" />
+          </g>
+        </svg>
+      </a>
+
+      <!-- Header > Main navigation -->
+      <nav class="main-nav">
+        <h2 class="visually-hidden">Main menu</h2>
+        <button class="menu-btn" aria-expanded="false" aria-controls="menu">
+          <span class="menu-btn__icon"></span>
+          <span class="menu-btn__label visually-hidden">Open main menu</span>
+        </button>
+        <ul id="menu" class="main-menu">
+          <li class="main-menu__item"><a href="#0">Product</a></li>
+          <li class="main-menu__item"><a href="#0">Features</a></li>
+          <li class="main-menu__item"><a href="#0">Pricing</a></li>
+          <li class="main-menu__item main-menu__item--secondary"><a href="#0">Login</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <!-- #MAIN -->
+    <main>
+      <div class="content-deco"></div>
+      <div class="content-body container">
+        <p class="content-body__subheading"><span>New</span> Monograph Dashboard</p>
+        <h1 class="content-body__heading">Powerful insights <br> into your team</h1>
+        <p class="content-body__p">Project planning and time tracking <br> for agile teams</p>
+        <div class="cta">
+          <a class="cta__btn" href="#0">Schedule a demo</a>
+          <span class="cta__text">to see a live preview</span>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <!-- #FOOTER -->
+  <footer class="page-footer">
+    <div class="attribution container">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" rel="noopener noreferrer" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/dusan-b" rel="noopener noreferrer" target="_blank">Dusan Brankov</a>.
+    </div>
+  </footer>
+
+  <div class="page-bg"></div>
+
+  <div class="preview-design"></div>
+
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>

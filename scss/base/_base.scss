@@ -1,0 +1,122 @@
+@use "../abstracts" as *;
+
+@font-face {
+  font-family: "Barlow";
+  src:
+    url("../fonts/barlow-regular.woff") format("woff"),
+    url("../fonts/barlow-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow Condensed";
+  src:
+    url("../fonts/barlowcondensed-regular.woff") format("woff"),
+    url("../fonts/barlowcondensed-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow Condensed";
+  src:
+    url("../fonts/barlowcondensed-bold.woff") format("woff"),
+    url("../fonts/barlowcondensed-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+::selection {
+  color: $clr-neutral-1;
+  background-color: darken($clr-neutral-4, 10%);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-copy;
+  font-size: 1.125rem;
+  color: $clr-neutral-1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+a:focus-visible {
+  outline: 2px dashed $clr-primary;
+  outline-offset: 5px;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    // Bug:
+    // Some screen readers don"t announce unordered lists when list-style-type is set to none
+    list-style-type: none;
+
+    &::before {
+      // Bugfix:
+      // Add zero-width space, parent <ul> is announced with a role of list again
+      content: "\200B";
+      // 1. Prevent the added zero-width space from affecting the layout
+      display: block; // 1
+      height: 0; // 1
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  // 1. Remove whitespace below images
+  vertical-align: top; // 1
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* For developing purposes:
+   Show the intended design when disabling display property in DevTools */
+.preview-design {
+  display: none;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  /*! background-image: url("../design/mobile-navigation.jpg"); */
+  background-image: url("../design/desktop-design.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
