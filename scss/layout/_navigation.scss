@@ -26,7 +26,9 @@
   &::before,
   &::after {
     content: "";
-    transition: transform 150ms ease-in-out;
+    transition:
+      transform $transition-main,
+      background-color $transition-main;
   }
 
   &::before {
@@ -41,7 +43,8 @@
     transform: translateY($line-menu-space);
 
     .is-active & {
-      transform: translateY(-2px)
+      transform: translateY(-2px);
+      background-color: $clr-primary;
     }
   }
 
