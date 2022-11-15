@@ -29,9 +29,9 @@ This is a solution to the [Project tracking intro component challenge on Fronten
 
 Because of the layout's simplicity, it was a quite comfortable working process without any major obstacles.
 
-The only thing which gave me a bit of a headache was the positioning of the image on the very right of the page. 'Cause I really don't like using `position: absolute;` in combination with `background-image`, as it always feels like a hacky solution to me and the ability to responsively adjust to the viewport is lost. I used it anyway, but in such a way that the image behaves like a responsive inline image (`<img>`) that grows and shrinks according to the size of the viewport, with the help of custom properties and the CSS function `clamp()`, no media queries at all.
+The only thing which gave me a bit of a headache was the positioning of the image on the very right of the page. 'Cause I really don't like using `position: absolute;` in combination with `background-image`, as it always feels like a hacky solution to me and the ability to responsively adjust to the viewport is lost. Anyway, by using the CSS function `clamp()` I was able to make the background image behave in such a way that it became fluidly responsive like a inline image (`<img>`) that grows and shrinks according to the size of the viewport. No media queries at all.
 
-So, I mainly was playing with the [`clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp) function. It allowed me to create not only smoothly responsive fonts, but also a perfectly responsive logo (and background image I mentioned above). It impressed me how awesome this function works and what possibilities it brings with it. I will definitely reuse this technique and deal with it in more detail.
+So, I mainly was experimenting with the [`clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp) function. It allowed me to create not only a smoothly responsive background image, but also a perfectly responsive typography (which is propapbly the main purpose of that function). It really impressed me how awesome this function works and what possibilities it brings with it. I will definitely deal with this technique in more detail and reuse it in the future.
 
 ## Useful resources
 
