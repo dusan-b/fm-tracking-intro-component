@@ -31,7 +31,7 @@ Because of the layout's simplicity, it was a quite comfortable working process w
 
 The only thing which gave me a bit of a headache was the positioning of the graphic on the very right of the page. I really don't like using `position: absolute;`, as it always feels like a hacky solution to me and the ability to responsively adjust to the viewport is lost. I used it anyway, but in such a way that the graphic behaves like an inline image that grows and shrinks according to the size of the viewport, without media queries.
 
-Mainly, I focused on the new CSS function [`clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp). With `clamp()`, I was able to create not only smoothly responsive fonts, but also a perfectly responsive logo and (background) image. I will definitely reuse this technique in the future.
+Anyway, mainly I focused on the new CSS function [`clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp). With `clamp()`, I was able to create not only smoothly responsive fonts, but also a perfectly responsive logo and (background) image. I will definitely reuse this technique in the future.
 
 ## Useful resources
 
