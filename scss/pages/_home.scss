@@ -1,22 +1,25 @@
 @use "../abstracts" as *;
 
-.content-deco {
-  --height: clamp(245px, 45vw, 475px);
-  --right: clamp(141px, 20vw, 710px);
-  height: var(--height);
-  background: transparent url(../img/illustration-devices.svg) top 0 right calc(-1 * var(--right))/auto var(--height) no-repeat;
+.content-image {
+  $height: clamp(245px, 32vw, 580px);
+  $right: clamp(141px, 18vw, 305px);
+  height: $height;
+  background: transparent url(../img/illustration-devices.svg) top 0 right (-1 * $right)/auto $height no-repeat;
   margin-bottom: 88px;
 
   @include media-min($viewport-l) {
-    order: unset;
     position: absolute;
     inset: 210px 0 auto;
     z-index: 1;
     margin-bottom: 0;
   }
+
+  @include media-min-max(500px, $viewport-l - 0.0625em) {
+    $height: clamp(245px, 52vw, 640px);
+  }
 }
 
-.content-deco__img {
+.content-image__img {
   width: 510px;
   max-width: unset;
   transform: translateX(2%);
@@ -69,7 +72,7 @@
 
 .cta {
   font-family: $font-accent;
-  font-size: clamp(0.875rem, 2vw, 1.0625rem);
+  font-size: clamp(0.875rem, 2.5vw, 1.0625rem);
 }
 
 .cta__btn {
