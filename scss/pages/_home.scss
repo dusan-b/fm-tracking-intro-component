@@ -4,7 +4,7 @@
   $height: clamp(245px, 32vw, 580px);
   $right: clamp(141px, 18vw, 305px);
   height: $height;
-  background: transparent url(../img/illustration-devices.svg) top 0 right (-1 * $right)/auto $height no-repeat;
+  background: transparent url("../img/illustration-devices.svg") top 0 right calc(-1 * $right)/auto $height no-repeat;
   margin-bottom: 88px;
 
   @include media-min($viewport-l) {
@@ -16,6 +16,8 @@
 
   @include media-min-max(500px, $viewport-l - 0.0625em) {
     $height: clamp(245px, 52vw, 640px);
+    height: $height;
+    background: transparent url("../img/illustration-devices.svg") top 0 right calc(-1 * $right)/auto $height no-repeat;
   }
 }
 
