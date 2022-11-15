@@ -106,7 +106,7 @@ button {
 
 /* For developing purposes:
    Show the intended design when disabling display property in DevTools */
-.preview-design {
+/* .preview-design {
   display: none;
   opacity: 0.5;
   position: absolute;
@@ -115,8 +115,7 @@ button {
   z-index: 999;
   width: 100%;
   height: 100vh;
-  /*! background-image: url("../design/mobile-navigation.jpg"); */
   background-image: url("../design/desktop-design.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-}
+} */
